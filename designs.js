@@ -6,6 +6,8 @@ const gridHeight = document.getElementById('inputHeight').value;
 const gridWidth = document.getElementById('inputWidth').value;
 
 // When size is submitted by the user, call makeGrid()
+const sizePicker = document.getElementById('sizePicker');
+sizePicker.addEventListener('submit', makeGrid);
 
 function makeGrid() {
 
