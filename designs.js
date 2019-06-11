@@ -37,10 +37,6 @@ function makeGrid(event) {
 }
 
 function paintCell(click) {
-    // Select color input
-    let selectedColor = document.getElementById('colorPicker').value;
-
-    // Store which cell was clicked
-    let selectedCell = click.target;
-    selectedCell.style.backgroundColor = selectedColor;
+    // Paint the clicked cell with the selected color
+    click.target.style.backgroundColor = document.getElementById('colorPicker').value;
 }
