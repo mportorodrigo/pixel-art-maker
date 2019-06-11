@@ -1,6 +1,3 @@
-// Select color input
-const selectedColor = document.getElementById('colorPicker').value;
-
 // When size is submitted by the user, call makeGrid()
 document.getElementById('sizePicker').addEventListener('submit', makeGrid);
 
@@ -27,10 +24,23 @@ function makeGrid(event) {
         // Create columns
         for (let column = 0; column < gridWidth; column++) {
             const td = document.createElement('td');
+
+            // When clicked, paint the clicked cell
+            td.addEventListener('click', paintCell);
+
             tr.appendChild(td);
         }
 
         // Add the columns to the row
         canvas.appendChild(tr);
     }
+}
+
+function paintCell(click) {
+    // Select color input
+    let selectedColor = document.getElementById('colorPicker').value;
+
+    // Store which cell was clicked
+    let selectedCell = click.target;
+    selectedCell.style.backgroundColor = selectedColor;
 }
