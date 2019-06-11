@@ -12,7 +12,7 @@ function makeGrid(event) {
     const gridHeight = document.getElementById('inputHeight').value;
     const gridWidth = document.getElementById('inputWidth').value;
 
-    // Gets the element in which the grid will be drawn
+    // Get the element in which the grid will be drawn
     const canvas = document.getElementById('pixelCanvas');
 
     for (let row = 0; row < gridHeight; row++) {
