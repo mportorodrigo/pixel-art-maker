@@ -2,7 +2,7 @@
 const selectedColor = document.getElementById('colorPicker').value;
 
 // When size is submitted by the user, call makeGrid()
-const sizePicker = document.getElementById('sizePicker').addEventListener('submit', makeGrid);
+document.getElementById('sizePicker').addEventListener('submit', makeGrid);
 
 function makeGrid(event) {
     // Prevents page refresh
