@@ -1,3 +1,6 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable indent */
+/* eslint-disable linebreak-style */
 // Select color input
 const selectedColor = document.getElementById('colorPicker').value;
 
@@ -6,11 +9,8 @@ const gridHeight = document.getElementById('inputHeight').value;
 const gridWidth = document.getElementById('inputWidth').value;
 
 // When size is submitted by the user, call makeGrid()
-const sizePicker = document.getElementById('sizePicker');
-sizePicker.addEventListener('submit', makeGrid);
+document.getElementById('sizePicker').addEventListener('submit', makeGrid);
 
 function makeGrid() {
-
-    // Your code goes here!
 
 }
