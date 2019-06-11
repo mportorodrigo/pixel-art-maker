@@ -15,6 +15,11 @@ function makeGrid(event) {
     // Get the element in which the grid will be drawn
     const canvas = document.getElementById('pixelCanvas');
 
+    // Clears the canvas if a grid was already built
+    while (canvas.firstChild) {
+        canvas.removeChild(canvas.firstChild);
+    }
+
     for (let row = 0; row < gridHeight; row++) {
         // Create a table row
         const tr = document.createElement('tr');
