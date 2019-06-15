@@ -32,9 +32,9 @@ document.getElementById('sizePicker').addEventListener('submit', function (event
         // Add the columns to the row
         canvas.appendChild(tr);
     }
-});
 
-function paintCell(click) {
-    // Paint the clicked cell with the selected color
-    click.target.style.backgroundColor = document.getElementById('colorPicker').value;
-}
+    function paintCell(click) {
+        // Paint the clicked cell with the selected color
+        click.target.style.backgroundColor = document.getElementById('colorPicker').value;
+    }
+});
