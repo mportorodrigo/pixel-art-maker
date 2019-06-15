@@ -1,4 +1,4 @@
-// When size is submitted by the user, call makeGrid()
+// Build a grid and paint its cells with the given input
 document.getElementById('sizePicker').addEventListener('submit', function (event) {
     // Prevents page refresh
     event.preventDefault();
