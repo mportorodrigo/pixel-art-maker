@@ -1,7 +1,5 @@
 // When size is submitted by the user, call makeGrid()
-document.getElementById('sizePicker').addEventListener('submit', makeGrid);
-
-function makeGrid(event) {
+document.getElementById('sizePicker').addEventListener('submit', function (event) {
     // Prevents page refresh
     event.preventDefault();
 
@@ -34,7 +32,7 @@ function makeGrid(event) {
         // Add the columns to the row
         canvas.appendChild(tr);
     }
-}
+});
 
 function paintCell(click) {
     // Paint the clicked cell with the selected color
