@@ -8,11 +8,11 @@ document.getElementById('sizePicker').addEventListener('submit', function (event
     const gridWidth = document.getElementById('inputWidth').value;
 
     // Get the element in which the grid will be drawn
-    const canvas = document.getElementById('pixelCanvas');
+    const table = document.getElementById('pixelCanvas');
 
-    // Clears the canvas if a grid was already built
-    while (canvas.firstChild) {
-        canvas.removeChild(canvas.firstChild);
+    // Clears the table if it was already built
+    while (table.firstChild) {
+        table.removeChild(table.firstChild);
     }
 
     for (let row = 0; row < gridHeight; row++) {
@@ -30,7 +30,7 @@ document.getElementById('sizePicker').addEventListener('submit', function (event
         }
 
         // Add the columns to the row
-        canvas.appendChild(tr);
+        table.appendChild(tr);
     }
 
     function paintCell(click) {
